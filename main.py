@@ -7,8 +7,8 @@ import pandas as pd
 app = Flask(__name__)
 
 # 모델 및 스케일러 로드
-model = tf.keras.models.load_model('model.h5')
-scaler = joblib.load('scaler.pkl')
+model = tf.keras.models.load_model('kia_large_model.h5')
+scaler = joblib.load('kia_large_scaler.pkl')
 
 
 @app.route('/predict', methods=['POST'])
